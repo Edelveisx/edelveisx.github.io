@@ -848,6 +848,9 @@ ul li {
   }
 }
 @media screen and (max-width: 560px) {
+  .l-block-members h2 {
+    padding-right: 0;
+  }
   .l-members-btn {
     position: relative;
     top: auto;
