@@ -490,6 +490,14 @@ ul li {
 .l-grid-line:last-child > div {
   padding-bottom: 0;
 }
+.l-grid-line:nth-child(3) > :last-child > :last-child,
+.l-grid-line:nth-child(4) > :last-child > :last-child{
+  display: none;
+}
+.l-grid-line:nth-child(3) > :last-child > :first-child,
+.l-grid-line:nth-child(4) > :last-child > :first-child{
+  display: inline-block;
+}
 .l-add-info {
   text-align: left;
 }
@@ -536,6 +544,19 @@ ul li {
   .l-grid-line {
     margin-bottom: 4px;
     padding-bottom: 16px;
+    order: 0;
+  }
+  .l-grid-line:nth-child(3),
+  .l-grid-line:last-child {
+    order: 1;
+  }
+  .l-grid-line:nth-child(3) > :last-child > :last-child,
+  .l-grid-line:nth-child(4) > :last-child > :last-child{
+    display: inline-block;
+  }
+  .l-grid-line:nth-child(3) > :last-child > :first-child,
+  .l-grid-line:nth-child(4) > :last-child > :first-child{
+    display: none;
   }
 
   .l-grid-line > :first-child {
